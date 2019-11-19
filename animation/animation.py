@@ -1,12 +1,15 @@
 """TO-DO: Write a description of what this XBlock is."""
 
+from __future__ import absolute_import
+
 import json
 
 import pkg_resources
 
 from xblock.core import XBlock
-from xblock.fields import Scope, Integer, List, String, DateTime, Float
+from xblock.fields import DateTime, Float, Integer, List, Scope, String
 from xblock.fragment import Fragment
+
 
 class AnimationXBlock(XBlock):
     """
@@ -181,4 +184,3 @@ With the gaps between the pins aligned with the shear line, the plug (yellow) ca
         """The maximum raw score of our problem.
         """
         return 1
-
