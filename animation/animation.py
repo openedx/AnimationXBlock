@@ -74,11 +74,15 @@ class AnimationXBlock(XBlock):
         The primary view of the AnimationXBlock, shown to students
         when viewing courses.
         """
+        inner_width = self.width
+        if self.width:
+            inner_width = self.width - 20
+
         html = self.resource_string("static/html/animation.html")
         frag = Fragment(html.format(height = self.height, 
                                     textheight = self.textheight, 
                                     width=self.width, 
-                                    inner_width=self.width-20, 
+                                    inner_width=inner_width,
                                     animation = json.dumps(self.animation),
                                     position = self.position, 
                                     max_position = self.max_position))
