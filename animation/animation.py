@@ -8,7 +8,7 @@ import pkg_resources
 
 from xblock.core import XBlock
 from xblock.fields import DateTime, Float, Integer, List, Scope, String
-from xblock.fragment import Fragment
+from web_fragments.fragment import Fragment
 
 
 class AnimationXBlock(XBlock):
@@ -78,7 +78,6 @@ class AnimationXBlock(XBlock):
         frag = Fragment(html.format(height = self.height, 
                                     textheight = self.textheight, 
                                     width=self.width, 
-                                    inner_width=self.width-20, 
                                     animation = json.dumps(self.animation),
                                     position = self.position, 
                                     max_position = self.max_position))
