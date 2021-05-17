@@ -1,0 +1,4 @@
+# Dependencies to run compile tools
+-c constraints.txt
+
+pip-tools
