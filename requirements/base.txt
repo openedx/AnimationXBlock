@@ -10,8 +10,10 @@ fs==2.4.13
     # via xblock
 lxml==4.6.3
     # via xblock
-markupsafe==2.0.0
-    # via xblock
+markupsafe==1.1.1
+    # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   xblock
 python-dateutil==2.8.1
     # via xblock
 pytz==2021.1
