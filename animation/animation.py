@@ -1,6 +1,5 @@
 """TO-DO: Write a description of what this XBlock is."""
 
-from __future__ import absolute_import
 
 import json
 
