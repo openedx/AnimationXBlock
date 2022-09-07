@@ -141,7 +141,7 @@ With the gaps between the pins aligned with the shear line, the plug (yellow) ca
                 </vertical_demo>
              """),
         ]
-    ## Everything below is stolen from https://github.com/edx/edx-ora2/blob/master/apps/openassessment/xblock/lms_mixin.py
+    ## Everything below is stolen from https://github.com/openedx/edx-ora2/blob/master/apps/openassessment/xblock/lms_mixin.py
     ## It's needed to keep the LMS+Studio happy. 
     ## It should be included as a mixin. 
     ## 
