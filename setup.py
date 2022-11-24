@@ -85,7 +85,7 @@ def is_requirement(line):
 
 setup(
     name='animation-xblock',
-    version='0.1',
+    version='0.2.0',
     description='animation XBlock',   # TODO: write a better description.
     packages=[
         'animation',
