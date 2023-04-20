@@ -158,7 +158,7 @@ With the gaps between the pins aligned with the shear line, the plug (yellow) ca
     ## effectively a TODO. 
 
     display_name = String(
-        default="Completion", scope=Scope.settings,
+        default="Animation", scope=Scope.settings,
         help=_("Display name")
     )
 
