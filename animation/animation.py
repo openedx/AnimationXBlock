@@ -10,6 +10,13 @@ from xblock.fields import DateTime, Float, Integer, List, Scope, String
 from xblock.fragment import Fragment
 
 
+def _(text):
+    """
+    Make '_' a no-op, so we can scrape strings
+    """
+    return text
+
+
 class AnimationXBlock(XBlock):
     """
     TO-DO: document what your XBlock does.
@@ -22,33 +29,33 @@ class AnimationXBlock(XBlock):
     animation = List(
         default=[], 
         scope=Scope.settings,
-        help="Animation",
+        help=_("Animation"),
     )
 
     height = Integer(
         scope=Scope.settings,
-        help="Height"
+        help=_("Height")
         )
 
     textheight = Integer(
         scope=Scope.settings,
-        help="Text Height"
+        help=_("Text Height")
         )
 
     width = Integer(
         scope=Scope.settings,
-        help="Width"
+        help=_("Width")
         )
 
     position = Integer(
         scope=Scope.user_state,
-        help="Current position",
+        help=_("Current position"),
         default=0
     )
 
     max_position = Integer(
         scope=Scope.user_state,
-        help="Maximum position (for progress)",
+        help=_("Maximum position (for progress)"),
         default=0
     )
 
@@ -152,24 +159,26 @@ With the gaps between the pins aligned with the shear line, the plug (yellow) ca
 
     display_name = String(
         default="Completion", scope=Scope.settings,
-        help="Display name"
+        help=_("Display name")
     )
 
     start = DateTime(
         default=None, scope=Scope.settings,
-        help="ISO-8601 formatted string representing the start date of this assignment. We ignore this."
+        help=_("ISO-8601 formatted string representing the start date of this assignment. We ignore this.")
     )
 
     due = DateTime(
         default=None, scope=Scope.settings,
-        help="ISO-8601 formatted string representing the due date of this assignment. We ignore this."
+        help=_("ISO-8601 formatted string representing the due date of this assignment. We ignore this.")
     )
 
     weight = Float(
         display_name="Problem Weight",
-        help=("Defines the number of points each problem is worth. "
-              "If the value is not set, the problem is worth the sum of the "
-              "option point values."),
+        help=_(
+            "Defines the number of points each problem is worth. "
+            "If the value is not set, the problem is worth the sum of the "
+            "option point values."
+        ),
         values={"min": 0, "step": .1},
         scope=Scope.settings
     )
