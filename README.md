@@ -1,6 +1,15 @@
 AnimationXBlock
 ===============
 
+DEPRECATION WARNING
+-------------------
+
+This AnimationXBlock is now deprecated and will not recieve further updates.  For
+details see https://github.com/openedx/AnimationXBlock/issues/88.
+
+Currently there is no replacement for this XBlock.
+
+--- 
 This XBlock shows students an animation they can go through. There is
 a set of images with corresponding text, and a slider for going
 through these images:
